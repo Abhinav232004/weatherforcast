@@ -16,29 +16,29 @@
             <div class="searchbox flex"><input type="text" placeholder="Location" name="search" class="inputs"><button type="submit" class="btn">Search</button></div>
         </div>
         <div class="Allwork">
-            <img src="/images/rain.png" alt="ERROR" class="images">
+            <img src="images/rain.png" alt="ERROR" class="images">
             <!-- <div class="weather">Moderate Rain</div> -->
             <div class="temp">30&#176;C</div>
         </div>
         <div class="flex-row">
             
             <div class="humidity flex-r">
-                <img src="/images/humidity.png" alt="error" srcset="">
+                <img src="images/humidity.png" alt="error" srcset="">
                 <div class="percerntagehumidity">50%</div>
                 <div class="Humidity">Humidity</div>
             </div>
             <div class="flex-r">
-                <img src="/images/wind.png" alt="error" srcset="">
+                <img src="images/wind.png" alt="error" srcset="">
                 <div class="windspeed">15km/h</div>
                 <div class="windspeed">WindSpeed</div>
             </div>
             <div class="flex-r">
-                <img src="/images/visibility.png" alt="error" srcset="" id="eyes">
+                <img src="images/visibility.png" alt="error" srcset="" id="eyes">
                 <div class="visibility">25km</div>
                 <div class="visible">Visibility</div>
             </div>
             <div class="flex-r">
-                <img src="/images/pressure.png" alt="error" srcset="">
+                <img src="images/pressure.png" alt="error" srcset="">
                 <div class="pressure">950hPa</div>
                 <div class="Pres">Pressure</div>
             </div>
@@ -88,19 +88,19 @@
             document.querySelector(".visibility").innerHTML=data.visibility +" km";
             document.querySelector(".pressure").innerHTML=data.main.pressure +" hPa";
             if(data.weather[0].main=='Clouds'){
-                weathercondition.src="/images/clouds.png"
+                weathercondition.src="images/clouds.png"
             }
             else if(data.weather[0].main=="Mist"){
-                weathercondition.src="/images/mist.png"
+                weathercondition.src="images/mist.png"
             }
             else if(data.weather[0].main=="Clear"){
-                weathercondition.src="/images/clear.png"
+                weathercondition.src="images/clear.png"
             }
             else if(data.weather[0].main=="Drizzle"){
-                weathercondition.src="/images/drizzle.png"
+                weathercondition.src="images/drizzle.png"
             }
             else if(data.weather[0].main=="Rain"){
-                weathercondition.src="/images/rain.png"
+                weathercondition.src="images/rain.png"
             }
 
     }
