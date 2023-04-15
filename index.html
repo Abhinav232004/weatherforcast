@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER REPORT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <main class="bbg-lightblue">
+        <div class="search flex">
+            <div class="opennewbox" id="p1"></div>
+            <div class="city">Amritsar</div>
+            <div class="searchbox flex"><input type="text" placeholder="Location" name="search" class="inputs"><button type="submit" class="btn">Search</button></div>
+        </div>
+        <div class="Allwork">
+            <img src="/images/rain.png" alt="ERROR" class="images">
+            <!-- <div class="weather">Moderate Rain</div> -->
+            <div class="temp">30&#176;C</div>
+        </div>
+        <div class="flex-row">
+            
+            <div class="humidity flex-r">
+                <img src="/images/humidity.png" alt="error" srcset="">
+                <div class="percerntagehumidity">50%</div>
+                <div class="Humidity">Humidity</div>
+            </div>
+            <div class="flex-r">
+                <img src="/images/wind.png" alt="error" srcset="">
+                <div class="windspeed">15km/h</div>
+                <div class="windspeed">WindSpeed</div>
+            </div>
+            <div class="flex-r">
+                <img src="/images/visibility.png" alt="error" srcset="" id="eyes">
+                <div class="visibility">25km</div>
+                <div class="visible">Visibility</div>
+            </div>
+            <div class="flex-r">
+                <img src="/images/pressure.png" alt="error" srcset="">
+                <div class="pressure">950hPa</div>
+                <div class="Pres">Pressure</div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const apiKey="712406e20bd5cc8c3fba199760b0a4e3";
+        const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+        const searchbox=document.querySelector(".inputs");
+        const searchbutton=document.querySelector(".btn");
+        const weathercondition=document.querySelector(".images");
+        function currentTime() {
+            let date = new Date(); 
+            let hh = date.getHours();
+            let mm = date.getMinutes();
+            let ss = date.getSeconds();
+            let session = "AM";
+          
+            if(hh == 0){
+                hh = 12;
+            }
+            if(hh > 12){
+                hh = hh - 12;
+                session = "PM";
+             }
+          
+             hh = (hh < 10) ? "0" + hh : hh;
+             mm = (mm < 10) ? "0" + mm : mm;
+             ss = (ss < 10) ? "0" + ss : ss;
+              
+             let time = hh + ":" + mm + ":" + ss + " " + session;
+          
+            document.getElementById("p1").innerText = time; 
+            let t = setTimeout(function(){ currentTime() }, 1000);
+          }
+          currentTime();
+        
+    async function checkWeather(city){
+        const response =await fetch(apiUrl + city + `&appid=${apiKey}`);
+            var data=await response.json();
+            console.log(data); 
+            document.querySelector(".city").innerHTML=data.name;
+            document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"&#176;C";
+            document.querySelector(".percerntagehumidity").innerHTML=data.main.humidity + "%";
+            document.querySelector(".windspeed").innerHTML=data.wind.speed +" km/h";
+            document.querySelector(".visibility").innerHTML=data.visibility +" km";
+            document.querySelector(".pressure").innerHTML=data.main.pressure +" hPa";
+            if(data.weather[0].main=='Clouds'){
+                weathercondition.src="/images/clouds.png"
+            }
+            else if(data.weather[0].main=="Mist"){
+                weathercondition.src="/images/mist.png"
+            }
+            else if(data.weather[0].main=="Clear"){
+                weathercondition.src="/images/clear.png"
+            }
+            else if(data.weather[0].main=="Drizzle"){
+                weathercondition.src="/images/drizzle.png"
+            }
+            else if(data.weather[0].main=="Rain"){
+                weathercondition.src="/images/rain.png"
+            }
+
+    }
+    searchbutton.addEventListener('click', ()=>{
+        checkWeather(searchbox.value)
+    })
+
+    </script>
+    
+</body>
+</html>

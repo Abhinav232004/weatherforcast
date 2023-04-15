@@ -1,0 +1,499 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: rgba(1, 120, 255, 0.532);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (min-width:320px) {
+    .windspeed{
+        font-size: medium;
+    }
+
+.flex{
+    display: flex;
+}
+.search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+.opennewbox{
+    padding-left: 0%;
+    font-size: 1.1rem;
+    margin-top: 4%;
+}
+.inputs{
+    margin-top: 6%;
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    color: lightgrey;
+    font-size: small;
+    border: 0px;
+
+}
+
+.images{
+    width: 15%;
+}
+.city{
+    font-size: 1.3rem;
+    margin-top: 3.5%;
+    padding-right: 3%;
+}
+.Allwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size:2rem;
+    margin: 5%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.flex-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    /* background-color: black; */
+    border: lightgrey;
+    background-color: lightgrey;
+    color: black;
+    margin-top: 6%;
+    height: 4vh;
+    font-size: 15px;
+    
+
+}
+input:hover{
+    color: black;
+    border: 0px;
+}
+input:visited{
+    color: black;
+}
+}
+@media screen and (min-width:375px) {
+
+.flex{
+    display: flex;
+}
+.search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+.opennewbox{
+    padding-left: 0%;
+    font-size: 1.4rem;
+    margin-top: 4%;
+}
+.inputs{
+    margin-top: 6%;
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    color: lightgrey;
+    font-size: small;
+    border: 0px;
+
+}
+
+.images{
+    width: 15%;
+}
+.city{
+    font-size: 2rem;
+    margin-top: 1.5%;
+    padding-right: 3%;
+}
+.Allwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size:2rem;
+    margin: 5%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.flex-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    /* background-color: black; */
+    border: lightgrey;
+    background-color: lightgrey;
+    color: black;
+    margin-top: 6%;
+    height: 4vh;
+    font-size: 15px;
+    
+
+}
+input:hover{
+    color: black;
+    border: 0px;
+}
+input:visited{
+    color: black;
+}
+}
+@media screen and (min-width:425px) {
+
+.flex{
+    display: flex;
+}
+.search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+.opennewbox{
+    padding-left: 0%;
+    font-size: 1.6rem;
+    margin-top: 2%;
+}
+.inputs{
+    margin-top: 6%;
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    color: lightgrey;
+    font-size: medium;
+    border: 0px;
+
+}
+
+.images{
+    width: 15%;
+}
+.city{
+    font-size: 2rem;
+    margin-top: 1.5%;
+    padding-right: 3%;
+}
+.Allwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size:2rem;
+    margin: 5%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.flex-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    /* background-color: black; */
+    border: lightgrey;
+    background-color: lightgrey;
+    color: black;
+    margin-top: 6%;
+    height: 4vh;
+    font-size: 15px;
+    
+
+}
+input:hover{
+    color: black;
+    border: 0px;
+}
+input:visited{
+    color: black;
+}
+}
+@media screen and (min-width:768px) {
+
+.flex{
+    display: flex;
+}
+.search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+.opennewbox{
+    padding-left: 1%;
+    font-size: 2.1rem;
+    margin-top: 2%;
+}
+.inputs{
+    margin-top: 6%;
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    color: lightgrey;
+    font-size:20px;
+    border: 0px;
+
+}
+
+.images{
+    width: 15%;
+}
+.city{
+    font-size: 2.4rem;
+    margin-top: 1.5%;
+    padding-right: 3%;
+}
+.Allwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size:3rem;
+    margin: 3%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.flex-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    /* background-color: black; */
+    font-size: medium;
+    border: lightgrey;
+    background-color: lightgrey;
+    color: black;
+    margin-top: 6%;
+    height: 4vh;
+    
+
+}
+input:hover{
+    color: black;
+    border: 0px;
+}
+input:visited{
+    color: black;
+}
+}
+@media screen and (min-width:1024px) {
+
+.flex{
+    display: flex;
+}
+.search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+.opennewbox{
+    padding-left: 1%;
+    font-size: 2.4rem;
+    margin-top: 2%;
+}
+.inputs{
+    margin-top: 6%;
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    color: lightgrey;
+    font-size:20px;
+    border: 0px;
+
+}
+
+.images{
+    width: 15%;
+}
+.city{
+    font-size: 2.8rem;
+    margin-top: 1.5%;
+    padding-right: 3%;
+}
+.Allwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size:4rem
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.flex-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    /* background-color: black; */
+    font-size: medium;
+    border: lightgrey;
+    background-color: lightgrey;
+    color: black;
+    margin-top: 6%;
+    height: 4vh;
+    
+
+}
+input:hover{
+    color: black;
+    border: 0px;
+}
+input:visited{
+    color: black;
+}
+}
+@media screen and (min-width:1440px) {
+
+.flex{
+    display: flex;
+}
+.search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+.opennewbox{
+    padding-left: 1%;
+    font-size: 3rem;
+    margin-top: 2%;
+}
+.inputs{
+    margin-top: 6%;
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    color: lightgrey;
+    font-size:20px;
+    border: 0px;
+
+}
+
+.images{
+    width: 15%;
+}
+.city{
+    margin-top: 1%;
+    font-size: 4rem;
+    padding-left: 2%;
+}
+.Allwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp{
+    font-size:4rem
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.flex-r{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    /* background-color: black; */
+    font-size: medium;
+    border: lightgrey;
+    background-color: lightgrey;
+    color: black;
+    margin-top: 6%;
+    height: 4vh;
+    
+
+}
+input:hover{
+    color: black;
+    border: 0px;
+}
+input:visited{
+    color: black;
+}
+
+}
