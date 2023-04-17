@@ -85,7 +85,7 @@
             document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"&#176;C";
             document.querySelector(".percerntagehumidity").innerHTML=data.main.humidity + "%";
             document.querySelector(".windspeed").innerHTML=data.wind.speed +" km/h";
-            document.querySelector(".visibility").innerHTML=data.visibility +" km";
+            document.querySelector(".visibility").innerHTML=data.visibility +" m";
             document.querySelector(".pressure").innerHTML=data.main.pressure +" hPa";
             if(data.weather[0].main=='Clouds'){
                 weathercondition.src="images/clouds.png"
